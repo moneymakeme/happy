@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7f50, #ff6347);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    line-height: 1.5;
+    animation: slideUp 1.5s ease-in-out 0.5s;
+  }
+  
+  .footer {
+    font-size: 1rem;
+    margin-top: 30px;
+    font-style: italic;
+    color: #ffd700;
+    animation: fadeIn 2.5s ease-in 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff6347;
+  }
+  
